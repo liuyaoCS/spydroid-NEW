@@ -18,12 +18,12 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-package com.spydroid.av.streaming.audio;
+package com.ly.push.av.streaming.audio;
 
 import java.io.IOException;
 
 import com.spydroid.net.rtp.AACADTSPacketizer;
-import com.spydroid.av.streaming.MediaStream;
+import com.ly.push.av.streaming.MediaStream;
 import android.media.MediaRecorder;
 
 /**

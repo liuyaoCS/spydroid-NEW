@@ -32,17 +32,17 @@
     
     <!-- FRAMERATE -->
     <string-array name="videoFramerateArray">
+        <item>25 fps</item>
         <item>20 fps</item>
         <item>15 fps</item>
         <item>10 fps</item>
-        <item>8 fps</item>
     </string-array>
 
     <string-array name="videoFramerateValues">
+        <item>25</item>
         <item>20</item>
         <item>15</item>
         <item>10</item>
-        <item>8</item>
     </string-array>
     
     <!-- BITRATE -->

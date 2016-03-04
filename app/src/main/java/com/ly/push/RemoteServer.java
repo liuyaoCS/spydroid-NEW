@@ -4,8 +4,6 @@ import java.io.IOException;
 import java.net.Socket;
 
 
-import com.ly.push.control.Session;
-import com.ly.push.control.UriParser;
 import com.spydroid.net.rtsp.RtspConstants;
 import com.spydroid.net.rtsp.client.RtspControlSdp;
 
@@ -45,24 +43,16 @@ public class RemoteServer {
 		
 		// Create new Session
 		session = new Session(socket.getInetAddress(),handler);
-		
-		// Parse URI and configure the Session accordingly 
-		final String uri = "/spydroid.sdp";
-		UriParser.parse(uri, session);
+
+		session.addVideoTrack();
+		session.addAudioTrack();
 		
 		 String sessionDescriptor = 
 				"v=0\r\n" +
-				//"o=- 15143872582342435176 15143872582342435176 IN IP4 "+socket.getLocalAddress().getHostName()+"\r\n"+
 				"o=- "+System.currentTimeMillis()+"	"+System.currentTimeMillis()+" IN IP4 "+socket.getLocalAddress().getHostName()+"\r\n"+
 				"s=CameraStream\r\n"+
 				//"i=N/A\r\n"+
 				"c=IN IP4 "+socket.getInetAddress().getHostAddress()+"\r\n"+
-				//"t=0 0\r\n"+
-				//"a=range:npt=now-"+
-				//"a=isma-compliance:2,2.0,2"+
-				//"a=tool:spydroid(cu)\r\n"+
-				//"a=recvonly\r\n"+
-				//"a=type:broadcast\r\n"+
 				//"a=charset:UTF-8\r\n"+
 				session.getSessionDescriptor();
 		

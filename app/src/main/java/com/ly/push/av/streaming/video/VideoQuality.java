@@ -18,7 +18,7 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-package com.spydroid.av.streaming.video;
+package com.ly.push.av.streaming.video;
 
 public class VideoQuality {
 

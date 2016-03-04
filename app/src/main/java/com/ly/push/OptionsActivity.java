@@ -30,7 +30,7 @@ import android.preference.Preference;
 import android.preference.PreferenceActivity;
 import android.preference.PreferenceManager;
 
-import com.ly.push.ui.R;
+import com.ly.push.R;
 
 public class OptionsActivity extends PreferenceActivity {
 

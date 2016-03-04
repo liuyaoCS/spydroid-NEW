@@ -18,14 +18,14 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-package com.spydroid.av.streaming.video;
+package com.ly.push.av.streaming.video;
 
 import java.io.File;
 import java.io.IOException;
 import java.util.concurrent.Semaphore;
 import java.util.concurrent.TimeUnit;
 
-import com.spydroid.av.mp4.MP4Config;
+import com.ly.push.av.mp4.MP4Config;
 import com.spydroid.net.rtp.H264Packetizer;
 
 import android.media.MediaRecorder;
@@ -122,7 +122,7 @@ public class H264Stream extends VideoStream {
 		testH264();
 		return "m=video "+String.valueOf(getDestinationPort())+" RTP/AVP 96\r\n" +
 				   "b=RR:0\r\n" +
-				   "a=rtpmap:96 H264/25000\r\n" +
+				   "a=rtpmap:96 H264/54000\r\n" +
 				   "a=fmtp:96 packetization-mode=1;profile-level-id="+mp4Config.getProfileLevel()+";sprop-parameter-sets="+mp4Config.getB64SPS()+","+mp4Config.getB64PPS()+";\r\n";
 	}
 	

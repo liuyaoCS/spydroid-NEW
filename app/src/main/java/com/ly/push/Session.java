@@ -18,21 +18,21 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-package com.ly.push.control;
+package com.ly.push;
 
 import java.io.IOException;
 import java.net.InetAddress;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-import com.spydroid.av.streaming.Stream;
-import com.spydroid.av.streaming.audio.AACStream;
-import com.spydroid.av.streaming.audio.AMRNBStream;
-import com.spydroid.av.streaming.audio.GenericAudioStream;
-import com.spydroid.av.streaming.video.H263Stream;
-import com.spydroid.av.streaming.video.H264Stream;
-import com.spydroid.av.streaming.video.VideoQuality;
-import com.spydroid.av.streaming.video.VideoStream;
+import com.ly.push.av.streaming.Stream;
+import com.ly.push.av.streaming.audio.AACStream;
+import com.ly.push.av.streaming.audio.AMRNBStream;
+import com.ly.push.av.streaming.audio.GenericAudioStream;
+import com.ly.push.av.streaming.video.H263Stream;
+import com.ly.push.av.streaming.video.H264Stream;
+import com.ly.push.av.streaming.video.VideoQuality;
+import com.ly.push.av.streaming.video.VideoStream;
 
 import android.hardware.Camera.CameraInfo;
 import android.os.Handler;

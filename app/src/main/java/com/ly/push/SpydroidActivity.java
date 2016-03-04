@@ -20,9 +20,7 @@
 
 package com.ly.push;
 
-import com.ly.push.control.Session;
-import com.ly.push.R;
-import com.spydroid.av.streaming.video.VideoQuality;
+import com.ly.push.av.streaming.video.VideoQuality;
 import android.app.Activity;
 import android.content.BroadcastReceiver;
 import android.content.Context;

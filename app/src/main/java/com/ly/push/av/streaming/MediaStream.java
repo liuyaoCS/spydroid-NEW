@@ -18,7 +18,7 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-package com.spydroid.av.streaming;
+package com.ly.push.av.streaming;
 
 import java.io.IOException;
 import java.net.InetAddress;
@@ -55,7 +55,7 @@ public abstract class MediaStream extends MediaRecorder implements Stream {
 		super();
 		
 		try {
-			lss = new LocalServerSocket("net.majorkernelpanic.librtp-"+id);
+			lss = new LocalServerSocket("com.spydroid.librtp-"+id);
 		} catch (IOException e1) {
 			//throw new IOException("Can't create local socket !");
 		}
@@ -145,7 +145,7 @@ public abstract class MediaStream extends MediaRecorder implements Stream {
 	
 	private void createSockets() throws IOException {
 		receiver = new LocalSocket();
-		receiver.connect( new LocalSocketAddress("net.majorkernelpanic.librtp-" + socketId ) );
+		receiver.connect( new LocalSocketAddress("com.spydroid.librtp-" + socketId ) );
 		receiver.setReceiveBufferSize(500000);
 		receiver.setSendBufferSize(500000);
 		sender = lss.accept();

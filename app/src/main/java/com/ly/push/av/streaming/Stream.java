@@ -1,4 +1,4 @@
-package com.spydroid.av.streaming;
+package com.ly.push.av.streaming;
 
 import java.io.IOException;
 import java.net.InetAddress;

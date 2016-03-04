@@ -18,7 +18,7 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-package com.spydroid.av.mp4;
+package com.ly.push.av.mp4;
 import java.io.IOException;
 import java.io.RandomAccessFile;
 import java.util.HashMap;
